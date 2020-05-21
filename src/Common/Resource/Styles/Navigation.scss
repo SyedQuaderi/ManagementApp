@@ -1,0 +1,95 @@
+/* Views/Visits/_NavigationBar */
+@import 'Variables.scss';
+@import 'layout.scss';
+
+$ra-current-color: ra-theme-color();
+$ra-border-color: ra-theme-color($ra-primary-theme, 'border');
+$ra-btn-hover-color: ra-theme-color($ra-primary-theme, 'btn-hover');
+$ra-breadcrumb-color: ra-theme-color($ra-primary-theme, 'breadcrumb');
+
+.container {
+    display: inherit;
+    padding-left: inherit;
+    #ra-navigation-bar {
+        height: 70px;
+        padding: 4px 4px 4px 20px;
+        float: left;
+        width: 100%;
+    
+        .navbar-container {
+            .breadcrumb {
+                font-family: Lato, Helvetica, Arial, sans-serif;
+                font-size: 24px;
+                background: $ra-breadcrumb-bg-color;
+                padding: 8px 0px 8px 0px;
+                display: block;
+                float: left;
+                line-height: 1.4;
+    
+                li {
+                    padding: 0 4px;
+                }
+    
+                a {
+                    color: $ra-breadcrumb-anchor-color;
+                }
+    
+                a:hover {
+                    color: $ra-brand-breadcrumb-hover;
+                }
+    
+                .dropdown {
+                    display: inline-block;
+    
+                    a {
+                        color: $ra-btn-hover-color;
+                    }
+                }
+    
+                .caret {
+                    height: 20px;
+                    margin-left: 10px;
+                    border-top: 14px dashed;
+                    border-right: 7px solid transparent;
+                    border-left: 7px solid transparent;
+                }
+    
+                .open > .dropdown-menu {
+                    margin-left: 34px;
+                    height: auto;
+                    max-height: 750px;
+                    overflow-x: hidden;
+    
+                    a {
+                        color: $ra-btn-hover-color;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.breadcrumb > li + li:before {
+    color: $ra-breadcrumb-color;
+    content: "\232A\00a0";
+    padding: 0 9.5px 0 9.8px;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.logo-separator {
+    margin: 0 15px;
+    height: 35px;
+    width: 1px;
+    background-color: #aaa;
+}
+
+.dashboard-separator {
+    margin: 10px 10px;
+    height: 35px;
+    width: 1px;
+    background-color: #aaa;
+}
