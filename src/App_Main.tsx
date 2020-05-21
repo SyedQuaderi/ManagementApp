@@ -5,13 +5,13 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Home from '../src/Common/Resource/Template/HomePage';
+import Home from './../ResourceFramework/Common/Resource/Template/HomePage';
 import Settings from './Main/Settings/Settings';
 import Patients from './Main/Patients/Patients';
 import Cashier from './Main/Cashier/Cashier';
 import Reports from './Main/Reports/Reports';
 import MediaSettings from './Main/Media/Media';
-import Layout from './Common/Resource/Template/Layout';
+import Layout from './../ResourceFramework/Common/Resource/Template/Layout';
 
 const App: React.FC = () => {
   let location = useLocation();
