@@ -44,7 +44,11 @@ $ra-theme-colors: (
         'footer-bg': $ra-brand-white-font,
         'breadcrumb': $ra-brand-breadcrumb-color
     ), 'custom': (
+<<<<<<< HEAD
         'base': green, 
+=======
+        'base': rgb(29, 168, 192), 
+>>>>>>> 42edaff36c1ce07d7d48589d10ea3dd1f4a4600b
         'font': $ra-footer-border-color,
         'button': $ra-brand-primary,
         'border': #393939,

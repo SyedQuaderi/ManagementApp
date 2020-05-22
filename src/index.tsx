@@ -1,4 +1,5 @@
-import './Common/Resource/Styles/Libraries/Bootstrap/Bootstrap.min.css'
+//import 'bootstrap/dist/css/bootstrap.css';
+import '../src/Common/Resource/Styles/Libraries/Bootstrap/Bootstrap.min.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';

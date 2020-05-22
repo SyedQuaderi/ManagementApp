@@ -5,7 +5,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Home from './Common/Resource/Template/HomePage';
+import Home from '../src/Common/Resource/Template/HomePage';
 import Settings from './Main/Settings/Settings';
 import Patients from './Main/Patients/Patients';
 import Cashier from './Main/Cashier/Cashier';
