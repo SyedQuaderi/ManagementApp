@@ -1,0 +1,175 @@
+@import "./Variables.scss";
+@import './Fonts.scss';
+
+// Theme value can be changed to 'custom' to change the header and it's repective theme colours
+$ra-primary-theme: 'default';
+
+@function ra-theme-color($key: $ra-primary-theme, $variant: 'base') {
+    $map: map-get($ra-theme-colors, $key);
+    @return map-get($map, $variant);
+}
+
+$ra-current-color: ra-theme-color();
+$ra-border-color: ra-theme-color($ra-primary-theme, 'border');
+$alert-background: #be0405;
+
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+}
+
+.borderless {
+    border: 0;
+}
+
+::-ms-clear {
+    display: none;
+}
+/*footer*/
+.navbar-fixed-bottom {
+    background-color: ra-theme-color($ra-primary-theme, 'footer');
+    padding: 10px;
+    border-top: ra-theme-color($ra-primary-theme, 'border') 1px solid;
+    height: 40px;
+    font-size: small;
+}
+
+/* Navigation Bar */
+.navbar {
+    min-height: 80px;
+    padding: 0;
+    display: block;
+
+    .container {
+        display: inherit;
+        margin-top: 12px;
+        font-family: Lato, Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        max-width: inherit;
+        padding-left: inherit;
+
+        a {
+            color: ra-theme-color($ra-primary-theme, 'font');
+        }
+
+        .navbar-header {
+            .navbar-brand {
+                font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                padding: 15px 15px 15px 20px;
+                line-height: 20px;
+            }
+        }
+
+        .ra-user-information {
+            .navbar-nav {
+                float: right;
+
+                .dropdown {
+                    .dropdown-toggle {
+                        background: transparent;
+                        margin-top: -10px;
+                        width: 330px;
+
+                        .ra-user-thumbnail {
+                            height: 40px;
+                            width: 40px;
+                            position: relative;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            background-color: ra-theme-color($ra-primary-theme, 'user');
+
+                            .ra-user-initials {
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                margin: auto;
+                                height: 100%;
+                                width: auto;
+                                color: ra-theme-color($ra-primary-theme, 'font');
+                            }
+
+                            img {
+                                position: absolute;
+                                left: -50%;
+                                right: -50%;
+                                top: 0;
+                                margin: auto;
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+
+                        .ra-user-name, .ra-user-title {
+                            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+                            color: ra-theme-color($ra-primary-theme, 'font');
+                        }
+
+                        .ra-user-name {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+
+                        .ra-user-title {
+                            font-size: 13px;
+                            font-style: italic;
+                            color: ra-theme-color($ra-primary-theme, 'user');
+                        }
+
+                        .caret {
+                            height: 14px;
+                            margin-left: 7px;
+                            margin-top: 10px;
+                            border-top: 11px dashed;
+                            border-right: 5px solid transparent;
+                            border-left: 5px solid transparent;
+                            color: ra-theme-color($ra-primary-theme, 'font');
+                        }
+                    }
+
+                    .dropdown-menu {
+                        background: ra-theme-color();
+                        margin-left: 55px;
+                        margin-top: -12px;
+                        position: absolute;
+                        min-width: 160px;
+                        font-size: 14px;
+
+                        li a {
+                            &:hover {
+                                color: ra-theme-color($ra-primary-theme, 'font');
+                                background: transparent;
+                            }
+
+                            &:focus {
+                                color: ra-theme-color($ra-primary-theme, 'font');
+                                background: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-default {
+    background: ra-theme-color();
+    margin-bottom: 0px;
+}
+
+.navbar-inverse {
+    background: ra-theme-color();
+    border-color: #ddd;
+    height: 90px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+.open > .dropdown-menu {
+    display: block;
+}
