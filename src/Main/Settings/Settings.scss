@@ -1,0 +1,36 @@
+@import '../../Variables.scss';
+
+.side-bar {
+    padding-top: 10px;
+    width: 300px;
+    background: $ma-sp-sidebar-bg-color;
+    font-size: 14px;
+    min-width: 300px;
+    .accordion {
+        .btn-link {
+            margin-left: 12%;
+            font-size: inherit;
+        }
+        .accordin-list {
+            margin-left: 28%;
+        }
+    }
+}
+
+.clients-main-content {
+    font-size: 14px;
+    .spinner-custom {
+        margin-left: 45%;
+        margin-top: 16%;
+    }
+    .ascending svg {
+        transform: rotate(180deg);
+    }
+    .input-group-text, .btn, .form-control {
+        font-size: 14px;
+    }
+}
+
+.hideDeleteLabel {
+    display: none;
+}
