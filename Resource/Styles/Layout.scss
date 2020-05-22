@@ -2,7 +2,7 @@
 @import './Fonts.scss';
 
 // Theme value can be changed to 'custom' to change the header and it's repective theme colours
-$ra-primary-theme: 'default';
+$ra-primary-theme: 'custom';
 
 @function ra-theme-color($key: $ra-primary-theme, $variant: 'base') {
     $map: map-get($ra-theme-colors, $key);
