@@ -9,7 +9,7 @@ import './Settings.scss';
 import {Accordion, Button} from 'react-bootstrap';
 import Clients from './Clients';
 import AddWard from './AddWard';
-import Navigation from './../../../ResourceFramework/Common/Resource/Template/Navigation';
+import Navigation from '../../Common/Resource/Template/Navigation';
   
 function Settings(props) {
     const [currentPage, setCurrentPage] = useState<String>('');
