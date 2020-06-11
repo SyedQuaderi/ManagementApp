@@ -1,6 +1,6 @@
 /* Views/Visits/_NavigationBar */
-@import 'Variables.scss';
-@import 'layout.scss';
+@import './Variables.scss';
+@import './layout.scss';
 
 $ra-current-color: ra-theme-color();
 $ra-border-color: ra-theme-color($ra-primary-theme, 'border');
