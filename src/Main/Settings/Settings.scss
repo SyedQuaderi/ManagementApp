@@ -14,6 +14,9 @@
         .accordin-list {
             margin-left: 28%;
         }
+        .btn:focus {
+            outline: none !important;
+        }
     }
 }
 
@@ -33,4 +36,15 @@
 
 .hideDeleteLabel {
     display: none;
+}
+.add-ward-main {
+    font-size: 14px;
+    .form-control {
+        font-size: 14px;;
+    }
+    
+    .add-ward-btn {
+        font-size: 14px;
+        padding: 6px 20px;
+    }
 }

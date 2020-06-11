@@ -1,9 +1,10 @@
 .modal {
     opacity: 1;
     .modal-dialog {
-        font-size: 14px;
+        font-size: 16px;
         .btn {
-            font-size: inherit;
+            font-size: 14px;
+            padding: 6px 15px;
         }
     }
 }

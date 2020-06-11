@@ -15,7 +15,7 @@ function Header(props) {
             <div id="pageHeader" className="navbar navbar-default">
                 <div className="container">
                     <div className="navbar-header">
-                        <a className="navbar-brand" href="~/">Patient Engagement System</a>
+                        <a className="navbar-brand" href="~/">Focused Patient Care</a>
                     </div>
                     <div className="pull-right">
                     <div id="user-information" className="ra-user-information">
